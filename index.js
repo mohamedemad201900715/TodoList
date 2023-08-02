@@ -1,11 +1,3 @@
-{/* <div class="tasks">
-<div class="task">
-<p>Ahmed</p>
-<div class="buttons">
-    <button>Correct</button>
-    <button>Delete</button>
-</div>
-</div> */}
 let input = document.querySelector(".task-name")
 let container = document.querySelector(".container")
 let add =document.querySelector(".add-task")
@@ -40,7 +32,9 @@ add.onclick = function(){
           let done = document.createElement("button")
           done.innerHTML = "Done";
           buttons.appendChild(done);
-          done.style.cursor = "auto"
+          done.style.cursor = "auto";
+          task.style.backgroundColor = "green";
+          paragraph.style.color = "white";
         }
         Delete.onclick = function(){
             tasks.style.display= "none";
